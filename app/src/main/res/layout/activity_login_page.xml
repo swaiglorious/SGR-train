@@ -14,18 +14,32 @@
             android:layout_width="wrap_content"
             android:layout_height="250dp"
             android:src="@drawable/train"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Phone Number"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Phone Number"
             android:inputType="number"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
             android:padding="30dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Password"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Password"
             android:inputType="textPassword"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
