@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -17,33 +17,33 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Phone Number"
+            android:hint="Phone Number"
+            android:textSize="23sp"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
-            android:textSize="20dp"
-            />
+            android:padding="30dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="number"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
-            android:padding="30dp"/>
+            android:padding="1dp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Password"
+            android:hint="Password"
+           android:textSize="23sp"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
-            android:textSize="20dp"
-            />
+            android:padding="30dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="textPassword"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
-            android:padding="30dp"/>
+            android:padding="1dp"/>
         <Button
             android:id="@+id/login"
             android:layout_width="match_parent"
@@ -62,5 +62,12 @@
             android:clickable="true"/>
 
     </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        />
 
-</LinearLayout>
+</RelativeLayout>

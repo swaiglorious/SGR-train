@@ -11,11 +11,17 @@
         android:id="@+id/action_about"
         android:orderInCategory="100"
         android:title="About"
-        
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_delete"
+        android:orderInCategory="100"
+        android:title="Delete"
+        app:showAsAction="never" />
+
     <item
         android:id="@+id/action_quit"
         android:orderInCategory="100"
         android:title="Quit"
         app:showAsAction="never" />
+
 </menu>

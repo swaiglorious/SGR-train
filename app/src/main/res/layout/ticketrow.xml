@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<TextView
+    android:id="@+id/cname"
+    android:text="Glorious Swai"
+    android:textSize="30sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"/>
+    <TextView
+        android:id="@+id/source"
+        android:text="Source: Athiriver"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"/>/>
+    <TextView
+        android:id="@+id/destination"
+        android:text="Destination: Mombasa"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"/>/>
+    <TextView
+        android:id="@+id/tnumber"
+        android:text="Ticketnumber:1234"
+        android:layout_width="match_parent"
+        android:textSize="25sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"/>/>
+
+</LinearLayout>
