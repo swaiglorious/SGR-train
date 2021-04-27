@@ -18,6 +18,7 @@ class AllTicketsAdapters(val ticket: ArrayList<Ticket>) : RecyclerView.Adapter<A
         val txtTicketNumber: TextView = view.findViewById(R.id.tnumber)
 
 
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -28,7 +29,6 @@ class AllTicketsAdapters(val ticket: ArrayList<Ticket>) : RecyclerView.Adapter<A
 
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-
         val currentItem = ticket[position]
         holder.txtTicketNumber.text = currentItem.tnumber
         holder.txtName.text = currentItem.name
@@ -36,7 +36,11 @@ class AllTicketsAdapters(val ticket: ArrayList<Ticket>) : RecyclerView.Adapter<A
         holder.txtTo.text = currentItem.destination
     }
 
-    override fun getItemCount() = ticket.size
+    override fun getItemCount(): Int {
+       return ticket.size
+    }
+
+
 
 }
 

@@ -13,9 +13,9 @@
             android:icon="@drawable/ic_baseline_history"
             android:title="History" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_booking"
             android:icon="@drawable/ic_baseline_account_circle"
-            android:title="My Profile" />
+            android:title="Booking Ticket" />
     </group>
 
 </menu>

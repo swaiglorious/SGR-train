@@ -24,21 +24,22 @@ class loginPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginPageBinding.inflate(layoutInflater)
-        title="SGRTicket"
+
         var view = binding.root
 
         setContentView(view)
+        title="SGRTicket"
         progressBar = binding.progress
 
         binding.login.setOnClickListener {
-            val logInpage = Intent(applicationContext, alltickets::class.java)
-            startActivity(logInpage)
+            val loginPage = Intent(applicationContext, alltickets::class.java)
+            startActivity(loginPage)
 
             val login=MyAsyncTask(applicationContext)
             login.execute()
         }
         binding.signin.setOnClickListener {
-            val signupPage = Intent(applicationContext, signupPage::class.java)
+            val signupPage = Intent(applicationContext, bookingPage::class.java)
             startActivity(signupPage)
 
         }

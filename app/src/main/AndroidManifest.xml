@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SGRtrain.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".alltickets"></activity>
+        <activity android:name=".bookingPage"></activity>
+        <activity android:name=".BookingPage" />
+        <activity android:name=".alltickets" />
         <activity
             android:name=".signupPage"
             android:theme="@style/Theme.SGRtrain" />
