@@ -4,9 +4,9 @@ import androidx.navigation.fragment.FragmentNavigator
 import java.security.CodeSource
 
 class Ticket {
-    var name: String="";
-    var source: String="";
-    var destination:String="";
+    var name: String=""
+    var source: String=""
+    var destination:String=""
     var tnumber:String=""
 
 

@@ -1,19 +1,21 @@
-
 package com.example.sgr_train
 
 
 import adapters.AllTicketsAdapters
+import android.R
 import android.content.Context
 import android.net.Uri
 import android.os.AsyncTask
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
+import android.view.MenuInflater
 import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sgr_train.databinding.ActivityAllticketsBinding
 import models.Ticket
@@ -26,12 +28,14 @@ import java.net.URL
 private lateinit var binding: ActivityAllticketsBinding
 val tTicketDetails =  ArrayList<Ticket>()
 
+
 class alltickets : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         binding = ActivityAllticketsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         val toolbar: Toolbar = findViewById(R.id.toolbar)
          setSupportActionBar(toolbar)
         title="BOOKED TICKETS"
@@ -40,16 +44,17 @@ class alltickets : AppCompatActivity() {
         tRecyclerView.layoutManager = LinearLayoutManager(this)
         val textView = TextView(this)
         textView.text = "BOOKED TICKETS"
-
         MyAsyncTask(applicationContext).execute()
 
     }
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.main, menu)
-        //menuInflater.inflate(R.menu.Menu, menu)
+        //menuInflater.inflate(R.menu.main_menu, menu)
         return true
     }
+
 
     class MyAsyncTask internal constructor(context: Context) : AsyncTask<String, String, String>() {
         lateinit var con: HttpURLConnection
@@ -78,8 +83,8 @@ class alltickets : AppCompatActivity() {
                 con = obj.openConnection() as HttpURLConnection
                 con.setRequestMethod("GET")
                 con.setRequestProperty(
-                    "User-Agent",
-                    "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)"
+                        "User-Agent",
+                        "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)"
                 )
                 con.setRequestProperty("Accept-Language", "UTF-8")
                 con.setDoOutput(true)
@@ -97,7 +102,7 @@ class alltickets : AppCompatActivity() {
                 Log.e("Fail 2", e.toString())
             }
 
-            return "";
+            return ""
         }
         override fun onPostExecute(result: String?) {
             super.onPostExecute(result)
@@ -120,4 +125,10 @@ class alltickets : AppCompatActivity() {
 
         }
     }
+
+}
+
+private fun MenuInflater.setEnabled(b: Boolean) {
+
+
 }

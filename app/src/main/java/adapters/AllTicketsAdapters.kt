@@ -1,5 +1,6 @@
 package adapters
 
+import android.content.ClipData
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,7 +17,7 @@ class AllTicketsAdapters(val ticket: ArrayList<Ticket>) : RecyclerView.Adapter<A
         val txtFrom: TextView = view.findViewById(R.id.source)
         val txtTo: TextView = view.findViewById(R.id.destination)
         val txtTicketNumber: TextView = view.findViewById(R.id.tnumber)
-
+        val delete: ClipData.Item = view.findViewById(R.id.action_delete)
 
 
     }
@@ -39,6 +40,11 @@ class AllTicketsAdapters(val ticket: ArrayList<Ticket>) : RecyclerView.Adapter<A
     override fun getItemCount(): Int {
        return ticket.size
     }
+    fun deleteItem(index: Int){
+        ticket.removeAt(index)
+        notifyDataSetChanged()
+    }
+
 
 
 

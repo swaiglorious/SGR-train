@@ -79,7 +79,7 @@ class signupPage : AppCompatActivity() {
                 } catch (e: java.lang.Exception) {
                     Log.e("Fail 2", e.toString())
                 }
-                return resulta;
+                return resulta
             }
             override fun onPostExecute(result: String?) {
                 super.onPostExecute(result)

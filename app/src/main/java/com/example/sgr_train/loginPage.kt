@@ -39,7 +39,7 @@ class loginPage : AppCompatActivity() {
             login.execute()
         }
         binding.signin.setOnClickListener {
-            val signupPage = Intent(applicationContext, bookingPage::class.java)
+            val signupPage = Intent(applicationContext, signupPage::class.java)
             startActivity(signupPage)
 
         }
@@ -88,7 +88,7 @@ class loginPage : AppCompatActivity() {
                     Log.e("Fail 2", e.toString())
                 }
 
-                return null;
+                return null
             }
             override fun onPostExecute(result: String?) {
                 super.onPostExecute(result)

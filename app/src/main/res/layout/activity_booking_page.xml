@@ -5,10 +5,89 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".bookingPage"
-    android:layout_gravity="center">
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+   <include
+       android:id="@+id/toolbar"
+       layout="@layout/toolbar"/>
    <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+       android:hint="name"
+       android:textSize="30sp"
+       android:padding="5dp"
+  />
+   <EditText
+       android:id="@+id/cname"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+       android:inputType="text"
+       android:padding="5dp"
+       android:paddingLeft="20dp"
+       android:paddingRight="20dp"
+
+       />
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+       android:hint="source"
+       android:textSize="25sp"
+       android:paddingTop="3dp"
+       android:padding="5dp"
+      />
+   <EditText
+       android:id="@+id/source"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+       android:inputType="text"
+       android:layout_marginTop="3dp"
+       android:paddingTop="3dp"
+
+       />
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+       android:hint="destination"
+       android:textSize="25sp"
+       android:layout_gravity="center"
+       android:padding="5dp"/>
+   <EditText
+       android:id="@+id/destination"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+       android:inputType="text"
+       android:padding="4dp"
+       android:paddingLeft="20dp"
+       android:paddingRight="20dp"
+       android:gravity="center"
+       />
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+       android:hint="date"
+       android:textSize="25sp"
+       android:padding="4dp"
+       />
+   <EditText
+       android:id="@+id/date_picker_actions"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+       android:inputType="text"
+       />
+   <Button
+       android:id="@+id/booking"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       />
+       android:layout_gravity="center"
+       android:text="BOOK TICKET"/>
 
 </LinearLayout>

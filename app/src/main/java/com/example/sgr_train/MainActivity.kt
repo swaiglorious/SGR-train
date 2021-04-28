@@ -50,7 +50,8 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.action_settings -> Toast.makeText(applicationContext, "clicked settings",Toast.LENGTH_SHORT).show()
-            R.id.action_about -> Toast.makeText(applicationContext, "clicked about",Toast.LENGTH_SHORT).show()
+            R.id.action_booking -> Toast.makeText(applicationContext, "clicked booking",Toast.LENGTH_SHORT).show()
+            R.id.action_delete -> Toast.makeText(applicationContext, "clicked delete",Toast.LENGTH_SHORT).show()
             R.id.action_quit -> Toast.makeText(applicationContext, "clicked quit",Toast.LENGTH_SHORT).show()
         }
 

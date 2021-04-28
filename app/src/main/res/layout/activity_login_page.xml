@@ -19,9 +19,9 @@
             android:layout_height="match_parent"
             android:hint="Phone Number"
             android:textSize="23sp"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="10dp"
             android:layout_marginLeft="20dp"
-            android:padding="30dp"/>
+            android:padding="5dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -36,7 +36,7 @@
            android:textSize="23sp"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="20dp"
-            android:padding="10dp"/>
+            android:padding="5dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
