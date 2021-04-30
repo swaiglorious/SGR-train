@@ -39,7 +39,7 @@ class loginPage : AppCompatActivity() {
             login.execute()
         }
         binding.signin.setOnClickListener {
-            val signupPage = Intent(applicationContext, signupPage::class.java)
+            val signupPage = Intent(applicationContext, bookingPage::class.java)
             startActivity(signupPage)
 
         }

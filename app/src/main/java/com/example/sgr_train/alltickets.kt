@@ -36,21 +36,23 @@ class alltickets : AppCompatActivity() {
         binding = ActivityAllticketsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
-         setSupportActionBar(toolbar)
+        //val toolbar = binding.toolbar
+         //setSupportActionBar(toolbar)
+        val textView = TextView(this)
+        textView.text = "BOOKED TICKETS"
         title="BOOKED TICKETS"
         val tRecyclerView = binding.alltickets
         tRecyclerView.setHasFixedSize(true)
         tRecyclerView.layoutManager = LinearLayoutManager(this)
-        val textView = TextView(this)
-        textView.text = "BOOKED TICKETS"
+        
+
         MyAsyncTask(applicationContext).execute()
 
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.main, menu)
+        //menuInflater.inflate(R.menu.main, menu)
         //menuInflater.inflate(R.menu.main_menu, menu)
         return true
     }

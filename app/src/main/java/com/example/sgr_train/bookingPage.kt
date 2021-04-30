@@ -26,7 +26,7 @@ class bookingPage : AppCompatActivity() {
         binding = ActivityBookingPageBinding.inflate(layoutInflater)
 
         var view = binding.root
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
+        val toolbar: Toolbar = findViewById(R.id.acting)
         setSupportActionBar(toolbar)
         title="BOOKING TICKETS"
         val textView = TextView(this)
